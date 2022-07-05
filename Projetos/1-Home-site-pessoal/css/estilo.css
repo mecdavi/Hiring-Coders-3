@@ -105,3 +105,14 @@ footer{
 footer h4{
     color: aliceblue;
 }
+
+/* media queries */
+
+@media(max-width:575px){
+    main input:first-child{
+        width: 80px;
+    }
+    h4{
+        font-size: 0.8em;
+    }
+}
