@@ -1,0 +1,107 @@
+:root{
+    --fundo:rgba(148, 148, 148, 0.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url('../imagens/pexels-adrien-olichon-2387793.jpg') no-repeat;
+    background-size: cover;
+    font-family:Arial, sans-serif;
+}
+/* ---- cabeçalho */
+@keyframes mensagem{
+    from{
+        
+    }
+}
+
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: 
+        '. h .'
+        ' . m .'
+        '. f .'
+    ;
+    gap: 20px;
+}
+
+header{
+    /* background-color:var(--fundo); */
+    grid-area: h;   
+}
+header i:hover{
+    color: #ccc;
+}
+header ul li a{
+    text-decoration: none;
+    color:rgb(194, 149, 0);
+    display: block;
+    padding: 15px;
+}
+ul li{
+    list-style: none;
+    float: left;
+}
+ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: end;
+}
+
+header div{
+    float: left;
+    padding: 15px;
+}
+
+/* conteudo */
+
+main{
+    /* background-color: var(--fundo); */
+    grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main input{
+    height: 50px;
+}
+
+main input:first-child{
+    background: rgba(194, 149, 0);
+    color:black;
+    font-weight: 700;
+    border-radius: 10px 0 0px 10px ;
+    padding: 5px;
+    transition: width 0.8s;
+    width: 180px;
+
+}
+main input{
+    width: 70px;
+    border-radius:0 10px 10px 0px ;;
+    background-color: #ccc;
+    font-weight: 700;
+}
+/* rodapé */
+footer{
+    /* background-color: var(--fundo); */
+    grid-area: f;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+
+footer h4{
+    color: aliceblue;
+}
