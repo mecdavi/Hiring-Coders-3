@@ -14,7 +14,7 @@ function push(numero){
 }
 
 function pop(){
-    // pilha não está fazia
+    // pilha não está vazia
     if (topo != -1){
         // numero = o ultimo elemento que entrou na pilha
         // topo aponta para posição do ultimo elemento = index
